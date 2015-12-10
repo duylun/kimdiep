@@ -714,6 +714,9 @@ h1#logo img{
     font-size: 28px;
     font-weight: normal;
 }
+.latest-b{
+    margin: 0 10px;
+}
 .latest-date{
     color: #d0ae5e;
     font-size: 13px;
@@ -739,4 +742,139 @@ h1#logo img{
 
 @media (max-width: 360px) {
   .newsletter .input-group-field { width: 100%; }
+}
+/*Tin thị trường*/
+h6.h-sub-content {
+    border-bottom: 6px solid #d0ae5e;
+    color: #101010;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 27px;
+    margin-bottom: -6px;
+    max-width: 100%;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    width: auto;
+}
+.sub-content span {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.sub-content {
+    border-bottom: 6px solid #D82727;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.blog-post {
+    border: medium none;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 7px;
+}
+h6.blog-date {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.blog-post h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    padding-top: 5px;
+}
+.blog-post p {
+    line-height: 1.78;
+    margin-top: 10px;
+}
+.vertical-space, .vertical-space1, .vertical-space2, .vertical-space3, .vertical-space4, .vertical-space5 {
+    border: 0 none;
+    clear: both;
+    display: block;
+    height: 20px;
+    margin: 0;
+    width: 100%;
+}
+a.readmore {
+    border: 1px solid #d0ae5e;
+    color: #222;
+    display: inline-block;
+    font-family: "Oswald",sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    padding: 11px;
+    position: relative;
+    text-transform: uppercase;
+    /*transform: translate(-50%, 0px);*/
+    transition: all 0.22s ease-in-out 0s;
+    z-index: 1;
+}
+a.readmore:hover {
+    border-color: #d0ae5e;
+    color: #fff !important;
+}
+a.readmore::after {
+    background: #d0ae5e none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: width 0.22s ease-in-out 0s;
+    width: 0;
+    z-index: -1;
+}
+a.readmore:hover::after {
+    width: 100%;
+}
+
+/*Widget*/
+.widget {
+    clear: both;
+    font-size: 13px;
+    font-weight: normal;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+.widget h4.subtitle {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 6px;
+    color: #101010;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px 0 5px;
+    position: relative;
+    text-align: center;
+}
+.widget h4.subtitle::after {
+    border-bottom: 6px solid #d0ae5e;
+    bottom: -6px;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: -18px;
+    position: absolute;
+    width: 36px;
 }
