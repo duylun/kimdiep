@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Trang chủ</title>
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css"  href="css/camera.css">
+	<link rel="stylesheet" type="text/css"  href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css"  href="css/owl.theme.css">
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/modernizr.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div id="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<h1 id="logo"><a href="#"><img src="images/logo.png" alt="Kim Điệp"></a></h1>
+						</div>
+					</div>
+				</div>
+				<!-- End .container -->
+			</div>
+			<!-- End #header-top -->
+
+			<div id="header-bot">
+				<div class="container">
+					<div class="container_in">
+						<div id="main-menu">
+							<div id="dmenu" class="hidden-xs hidden-sm">
+								<ul class="mainnav">
+									<li class="level0 item"><a href="#">Trang chủ</a></li>
+									<li class="level0 item"><a href="#">Giới thiệu</a></li>
+									<li class="level0 item"><a href="#">Tin tức</a></li>
+									<li class="level0 item"><a href="#">Xe máy</a></li>
+									<li class="level0 item"><a href="#">Lái xe an toàn</a></li>
+									<li class="level0 item"><a href="#">Tuyển dụng</a></li>
+									<li class="level0 item"><a href="#">Liên hệ</a></li>
+								</ul>
+							</div>
+							<!-- End #dmenu -->
+							<div id="mmenu" class="menu-offcanvas hidden-md hidden-lg">
+								<span class="btn2 btn-navbar offcanvas">
+									<span class="overlay"></span>
+								</span>
+								<div id="menu_offcanvas" class="offcanvas">
+
+								</div>
+							</div>
+						</div>
+						<!-- End #main-menu -->
+					</div>
+				</div>
+			</div>
+			<!-- End #header-bot -->
+		</div>
+		<!-- End #header -->
+		<!-- Slide -->
+		<div id="showcase-row">
+		    <div class="moduletable ">
+		        <div class="camera_wrap pattern_1" id="camera-slideshow">
+		            
+		            <div data-target="_self" data-link="#" data-src="images/1.jpg" class="camera-item">
+		                <div class="camera_caption fadeIn">
+		                        <div>
+		                            <h4 class="slide-title"></h4>
+		                        </div>
+		                    </div>
+
+		            </div>
+
+		            <div data-target="_self" data-link="#" data-src="images/2.jpg" class="camera-item">
+		                <div class="camera_caption fadeIn">
+		                        <div>
+		                            <h4 class="slide-title"></h4>
+		                        </div>
+		                    </div>
+
+		            </div>
+
+		            <div data-target="_self" data-link="#" data-src="images/3.jpg" class="camera-item">
+		                <div class="camera_caption fadeIn">
+		                        <div>
+		                            <h4 class="slide-title"></h4>
+		                        </div>
+		                    </div>
+
+		            </div>
+		        
+		        </div>
+		        <script type="text/javascript">
+		            jQuery(document).ready(function () {
+		                jQuery('#camera-slideshow').camera({
+		                    alignment: "center", //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
+		                    autoAdvance: true, //true, false
+		                    mobileAutoAdvance: true, //true, false. Auto-advancing for mobile devices
+
+		                    barDirection: "leftToRight", //'leftToRight', 'rightToLeft', 'topToBottom', 'bottomToTop'
+		                    barPosition: "bottom", //'bottom', 'left', 'top', 'right'
+		                    cols: 6,
+		                    easing: "swing", //for the complete list http://jqueryui.com/demos/effect/easing.html
+		                    mobileEasing: "swing", //leave empty if you want to display the same easing on mobile devices and on desktop etc.
+		                    fx: "simpleFade",
+		                    mobileFx: "simpleFade", //leave empty if you want to display the same effect on mobile devices and on desktop etc.
+		                    gridDifference: 250, //to make the grid blocks slower than the slices, this value must be smaller than transPeriod
+		                    height: "46.3%", //here you can type pixels (for instance '300px'), a percentage (relative to the width of the slideshow, for instance '50%') or 'auto'
+		                    // imagePath                    : 'images/',    //the path to the image folder (it serves for the blank.gif, when you want to display videos)
+		                    hover: true, //true, false. Puase on state hover. Not available for mobile devices
+		                    loader: "none", //pie, bar, none (even if you choose "pie", old browsers like IE8- can't display it... they will display always a loading bar)
+		                    loaderColor: "#eeeeee",
+		                    loaderBgColor: "#222222",
+		                    loaderOpacity: .8, //0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
+		                    loaderPadding: 2, //how many empty pixels you want to display between the loader and its background
+		                    loaderStroke: 7, //the thickness both of the pie loader and of the bar loader. Remember: for the pie, the loader thickness must be less than a half of the pie diameter
+		                    minHeight: "200px", //you can also leave it blank
+		                    navigation: true, //true or false, to display or not the navigation buttons
+		                    navigationHover: false, //if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be   visible always
+		                    mobileNavHover: false, //same as above, but only for mobile devices
+		                    opacityOnGrid: false, //true, false. Decide to apply a fade effect to blocks and slices: if your slideshow is fullscreen or simply big, I recommend to set it false to have a smoother effect 
+		                    overlayer: false, //a layer on the images to prevent the users grab them simply by clicking the right button of their mouse (.camera_overlayer)
+		                    pagination: false,
+		                    playPause: false, //true or false, to display or not the play/pause buttons
+		                    pauseOnClick: false, //true, false. It stops the slideshow when you click the sliders.
+		                    pieDiameter: 38,
+		                    piePosition: "rightTop", //'rightTop', 'leftTop', 'leftBottom', 'rightBottom'
+		                    portrait: false, //true, false. Select true if you don't want that your images are cropped
+		                    rows: 4,
+		                    slicedCols: 6, //if 0 the same value of cols
+		                    slicedRows: 4, //if 0 the same value of rows
+		                    // slideOn              : "",   //next, prev, random: decide if the transition effect will be applied to the current (prev) or the next slide
+		                    thumbnails: false,
+		                    time: 7000, //milliseconds between the end of the sliding effect and the start of the nex one
+		                    transPeriod: 1500 //lenght of the sliding effect in milliseconds
+		                        // onEndTransition      : function() {  },  //this callback is invoked when the transition effect ends
+		                        // onLoaded                 : function() {  },  //this callback is invoked when the image on a slide has completely loaded
+		                        // onStartLoading       : function() {  },  //this callback is invoked when the image on a slide start loading
+		                        // onStartTransition    : function() {  }   //this callback is invoked when the transition effect starts
+		                });
+		            });
+		        </script>
+		    </div>
+		</div>
+		<!-- End slide -->
+
+		<!-- Loại xe -->
+		<div id="loai-xe-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 owl-carousel owl-theme" id="owl-loaixe">
+						<div class="loai-xe-item">
+							<div class="loai-xe-img"><a href="#"><img src="images/xe/honda/sh.jpg" alt="Sh" /></a></div>
+							<div class="loai-xe-ten"><a href="#">Sh 125/150cc</a></div>
+						</div>
+						<div class="loai-xe-item">
+							<div class="loai-xe-img"><a href="#"><img src="images/xe/honda/shmode.jpg" alt="Sh Mode" /></a></div>
+							<div class="loai-xe-ten"><a href="#">Sh mode 125cc</a></div>
+						</div>
+						<div class="loai-xe-item">
+							<div class="loai-xe-img"><a href="#"><img src="images/xe/honda/msx.jpg" alt="MSX 125" /></a></div>
+							<div class="loai-xe-ten"><a href="#">MSX 125cc</a></div>
+						</div>
+						<div class="loai-xe-item">
+							<div class="loai-xe-img"><a href="#"><img src="images/xe/honda/ab.jpg" alt="Air Blade" /></a></div>
+							<div class="loai-xe-ten"><a href="#">Air Blade 125cc</a></div>
+						</div>
+						<div class="loai-xe-item">
+							<div class="loai-xe-img"><a href="#"><img src="images/xe/honda/lead.jpg" alt="Lead" /></a></div>
+							<div class="loai-xe-ten"><a href="#">Lead 125cc</a></div>
+						</div>
+						<div class="loai-xe-item">
+							<div class="loai-xe-img"><a href="#"><img src="images/xe/honda/vision.jpg" alt="Vison" /></a></div>
+							<div class="loai-xe-ten"><a href="#">Vision 110cc</a></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		    jQuery(document).ready(function($) {
+		        $('#owl-loaixe').owlCarousel({
+		        	autoPlay: 3000,
+		        	loop:true,
+		            pagination :true,
+                    items : 5,
+                    slideSpeed: 1000,
+                    itemsDesktop : [1200,5],
+                    itemsDesktopSmall : [1024,4],
+                    itemsTablet: [640,3],
+                    itemsMobile : [480,2]
+		        });
+		    });;
+		</script>
+		<!-- End loại xe -->
+		<!-- Tin KIM DIEP -->
+		<div id="news-home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="max-title1"><h2>Tin Kim Điệp</h2></div>
+						<div class="container latestposts-six owl-carousel owl-theme" id="tin-kimdiep">
+						    <div class="col-md-3 col-sm-6">
+						        <article class="latest-b">
+						            <figure class="latest-img">
+						                <a title="" href="#"><img width="720" height="388" class="landscape thumbnail latestfromblog" alt="" src="images/tin1.jpg"></a>
+						            </figure>
+						            <div class="latest-content">
+						                <p class="latest-date">Thứ 4, 08/12/2015</p>
+						                <h3 class="latest-title"><a href="#">Đón Noel, Mừng năm mới</a></h3>						                
+						            </div>
+						        </article>
+						    </div>
+						    <div class="col-md-3 col-sm-6">
+						        <article class="latest-b">
+						            <figure class="latest-img">
+						                <a title="" href="#"><img width="720" height="388" class="landscape thumbnail latestfromblog" alt="" src="images/tin2.jpg"></a>
+						            </figure>
+						            <div class="latest-content">
+						                <p class="latest-date">Thứ 5, 09/12/2015</p>
+						                <h3 class="latest-title"><a href="#">Quà sành điệu, triệu niềm vui</a></h3>
+						            </div>
+						        </article>
+						    </div>
+						    <div class="col-md-3 col-sm-6">
+						        <article class="latest-b">
+						            <figure class="latest-img">
+						                <a title="" href="#"><img width="720" height="388" class="landscape thumbnail latestfromblog" alt="" src="images/tin3.jpg"></a>
+						            </figure>
+						            <div class="latest-content">
+						                <p class="latest-date">Thứ 5, 09/12/2015</p>
+						                <h3 class="latest-title"><a href="#">Khuyến mãi hấp dẫn Piaggio Liberty</a></h3>						                
+						            </div>
+						        </article>
+						    </div>
+						    <div class="col-md-3 col-sm-6">
+						        <article class="latest-b">
+						            <figure class="latest-img">
+						                <a title="" href="#"><img width="720" height="388" class="landscape thumbnail latestfromblog" alt="" src="images/tin4.jpg"></a>
+						            </figure>
+						            <div class="latest-content">
+						                <p class="latest-date">Thứ 5, 09/12/2015</p>
+						                <h3 class="latest-title"><a href="#">Quy đinh về thời gian & lãi suất mua xe tra góp tại Kim Điệp</a></h3>
+						            </div>
+						        </article>
+						    </div>
+						    <div class="col-md-3 col-sm-6">
+						        <article class="latest-b">
+						            <figure class="latest-img">
+						                <a title="" href="#"><img width="720" height="388" class="landscape thumbnail latestfromblog" alt="" src="images/tin3.jpg"></a>
+						            </figure>
+						            <div class="latest-content">
+						                <p class="latest-date">Thứ 5, 09/12/2015</p>
+						                <h3 class="latest-title"><a href="#">Khuyến mãi hấp dẫn Piaggio Liberty</a></h3>						                
+						            </div>
+						        </article>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		    jQuery(document).ready(function($) {
+		        $('#tin-kimdiep').owlCarousel({
+		        	autoPlay: 3000,
+		        	loop:true,
+		            pagination :true,
+                    items : 4,
+                    slideSpeed: 1000,
+                    itemsDesktop : [1200,4],
+                    itemsDesktopSmall : [1024,2],
+                    itemsTablet: [640,2],
+                    itemsMobile : [480,1]
+		        });
+		    });;
+		</script>
+		<!-- End tin KIM DIEP -->
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div id="col-left" class="col-xs-12 col-md-9">
+						
+					</div>
+					<div id="col-right" class="col-xs-12 col-md-3">
+				    	
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!-- End #content -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-xs-12 footer-contact">
+					    <h4 class="block-title">Công Ty TNHH Thương Mại Kim Điệp</h4>
+					    <div class="contact-us">
+					        <ul>
+					            <li><em class="fa fa-home">&nbsp;</em>142 Trần Phú – Vĩnh Thanh Vân, TP. Rạch Giá, Kiên Giang</li>
+					            <li><em class="fa fa-phone">&nbsp;</em>0773.873939 - 0778.600969</li>
+					            <li><em class="fa fa-fax">&nbsp;</em>077.3.946.946</li>
+					            <li><em class="fa fa-envelope">&nbsp;</em><a href="mailto:congtykimdiep@gmail.com">congtykimdiep@gmail.com; kimdiepkimtien@yahoo.com.vn</a></li>
+					        </ul>
+					    </div>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-2 column">
+					    <h4>Hỗ trợ</h4>
+					    <ul>
+					        <li><a href="#" title="">Dịch vụ xe máy</a></li>
+					        <li><a href="#" title="">Dịch vụ tài chính</a></li>
+					        <li><a href="#" title="">Dịch vụ phủ nano</a></li>
+					        <li><a href="#" title="">Câu hỏi thường gặp</a></li>
+					    </ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-2 column">
+					    <h4>Thông tin</h4>
+					    <ul>
+					        <li><a href="#" class="" id="about" title="Giới thiệu">Giới thiệu</a></li>
+					        <li><a href="#" class="" id="careers" title="Tuyển dụng">Tuyển dụng</a></li>
+					        <li><a href="#" class="" id="contact-us" title="Liên hệ">Liên hệ</a></li>
+					    </ul>
+					</div>
+					
+					<div class="col-xs-12 col-sm-4 col-md-4 column">
+					    <h4>Đăng Ký nhận tin</h4>
+					    <script type="text/javascript">
+                            function alertfc(str)
+                            {
+                                $('#palert').text(str);
+                                $('#alertbox').fadeIn('fast');
+                                setTimeout(function(){$('#alertbox').fadeOut('fast')}, 2000);
+                                return false;                                                   
+                            }
+                            function check(){
+                                var email = /^[a-z_]+[a-z\._\d]*@[a-z_]+[a-z\._\d]*\.[a-z]{2,4}$/i;
+                                if(document.fmail.subcribe.value == '')
+                                {
+                                    var str = 'Quý khách vui lòng nhập email!';
+                                    document.fmail.subcribe.focus();
+                                    return alertfc(str);
+                                }
+                                if(email.test(document.getElementById('subcribe').value) == false)
+                                {
+                                    var str = 'Email không hợp lệ!';
+                                    document.fmail.subcribe.focus();
+                                    return alertfc(str);
+                                }
+                                return true;
+                            }
+                        </script>
+                        <div class="newsletter">
+                            <form name="fmail" id="fmail" action="#" method="post" onSubmit="return check()" class="input-group">
+                                <input type="text" value="" placeholder="Nhập email của bạn" name="subcribe" id="subcribe" class="input-group-field" aria-label="Email Address">
+                                <span class="input-group-btn"><input type="submit" class="btn" value="Đăng ký" name="subscribe"></span>
+                            </form>
+                        </div>
+
+                        <div class="sns-social">
+                            <ul>
+                                <li>
+                                    <a data-toggle="tooltip" target="_self" title="Facebook" href="#" class="fa fa-facebook"></a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tooltip" target="_self" title="Twitter" href="#" class="fa fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a data-toggle="tooltip" target="_self" title="Google" href="#" class="fa fa-google-plus"></a>
+                                </li>                                
+                            </ul>
+                        </div>
+						<div class="hotline">Hotline: 1800 1102</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End #footer -->
+		<div id="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">&copy Copyright Kim Điệp. Phát triển bởi <a href="http://demos.vn">Demos Việt Nam</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End #wrap -->
+	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> 
+	<script type="text/javascript" src="js/camera.min.js"></script> 
+	<script type="text/javascript" src="js/custom.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function($) {
+			$('#menu_offcanvas').html($('#dmenu').html());            
+            $('#mmenu').find('li > .wrap_submenu > ul').unwrap();
+            $('#menu_offcanvas').Accordion({
+                accordion: false,
+                expand: false,
+                el_content: 'ul, .wrap_submenu',
+                btn_open: '<i class="fa fa-plus"></i>',
+                btn_close: '<i class="fa fa-minus"></i>'
+            });
+            $('#mmenu .btn2.offcanvas').on('click', function() {
+                if ($('#menu_offcanvas').hasClass('active')) {
+                    $(this).find('.overlay').fadeOut(250);
+                    $('#menu_offcanvas').removeClass('active');
+                    $('body').removeClass('show-sidebar show-menumobile');
+                } else {
+                    $('#menu_offcanvas').addClass('active');
+                    $(this).find('.overlay').fadeIn(250);
+                    $('body').addClass('show-sidebar show-menumobile');
+                }
+            });
+		});
+	</script> 
+</body>
+</html>
